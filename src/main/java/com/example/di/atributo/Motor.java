@@ -10,8 +10,9 @@ public class Motor {
 
     private Integer modelo;
 
+    public Motor() {}
 
-    public Motor(@Value("XL1")String marca, @Value("1987")Integer modelo) {
+    public Motor(String marca, Integer modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
@@ -24,10 +25,12 @@ public class Motor {
         return modelo;
     }
 
+    @Value("XL1")
     public void setMarca(String marca) {
         this.marca = marca;
     }
 
+    @Value("1987")
     public void setModelo(Integer modelo) {
         this.modelo = modelo;
     }
