@@ -9,8 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Nido {
 
-
-    @Qualifier("pajarito")
     @Autowired
 
     private Animal animal;
